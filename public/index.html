@@ -1,0 +1,495 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Drink Menu</title>
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+        <style>
+          body {
+              background: #f0f0f0 url('https://www.transparenttextures.com/patterns/concrete-wall.png');
+              color: #1e3d2f;
+              font-family: 'Playfair Display', serif;
+              margin: 0;
+              padding: 0;
+          }
+          section {
+              padding: 40px;
+          }
+          h2 {
+              text-align: center;
+              font-family: 'Great Vibes', cursive;
+              font-size: 2.8em;
+              margin-bottom: 30px;
+              color: #1e3d2f;
+          }
+          .drink-grid {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              gap: 20px;
+          }
+          .drink-card {
+              background: white;
+              border-radius: 12px;
+              box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+              padding: 16px;
+              width: 240px;
+              transition: transform 0.2s, box-shadow 0.2s;
+          }
+          .drink-card:hover {
+              transform: translateY(-4px);
+              box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+          }
+          .drink-card img {
+              width: 100%;
+              height: 200px;
+              object-fit: cover;
+              border-radius: 8px;
+          }
+          .drink-card h3 {
+              margin: 10px 0 5px;
+              font-size: 1.2em;
+          }
+          .price {
+              font-weight: bold;
+          }
+          .ingredients {
+              font-size: 0.9em;
+              color: #555;
+          }
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+}
+        </style>
+      </head>
+      
+<body>
+    <header style="display: flex; align-items: center; padding: 20px;">
+        <img src="drink_thumbnails/rodneys_logo_transparent.png" alt="Rodney's Logo" style="height: 300px;">
+    </header>    
+    <section>
+        <h2>Margaritas</h2>
+        <div class="drink-grid">
+            
+        <div class="drink-card">
+            <img src="drink_thumbnails/mango_margarita.png" alt="Mango Margarita">
+            <h3>Mango Margarita</h3>
+            <p class="price">$12.50</p>
+            
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/pineapple_peachy_margarita.png" alt="Pineapple Peachy Margarita">
+            <h3>Pineapple Peachy Margarita</h3>
+            <p class="price">$12.50</p>
+            
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/hennessy_margarita.png" alt="Hennessy Margarita">
+            <h3>Hennessy Margarita</h3>
+            <p class="price">$15.50</p>
+            <p class="ingredients">Sour mix, splash of Grand Gala</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/prickly_pear_margarita.png" alt="Prickly Pear Margarita">
+            <h3>Prickly Pear Margarita</h3>
+            <p class="price">$12.50</p>
+            
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/jalapeño_&_elderberry_margarita.png" alt="Jalapeño & Elderberry Margarita">
+            <h3>Jalapeño & Elderberry Margarita</h3>
+            <p class="price">$12.50</p>
+            <p class="ingredients">Elderberry, strawberry, tequila, splash of Grand Gala</p>
+        </div>
+        
+        </div>
+    </section>
+    
+    <section>
+        <h2>Martinis</h2>
+        <div class="drink-grid">
+            
+        <div class="drink-card">
+            <img src="drink_thumbnails/daiquiri_martini.png" alt="Daiquiri Martini">
+            <h3>Daiquiri Martini</h3>
+            <p class="price">$12.50</p>
+            
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/prickly_pear_martini.png" alt="Prickly Pear Martini">
+            <h3>Prickly Pear Martini</h3>
+            <p class="price">$12.50</p>
+            
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/mango_martini.png" alt="Mango Martini">
+            <h3>Mango Martini</h3>
+            <p class="price">$12.50</p>
+            
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/passion_fruit_martini.png" alt="Passion Fruit Martini">
+            <h3>Passion Fruit Martini</h3>
+            <p class="price">$11.50</p>
+            
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/banana_split_martini.png" alt="Banana Split Martini">
+            <h3>Banana Split Martini</h3>
+            <p class="price">$11.50</p>
+            
+        </div>
+        
+        </div>
+    </section>
+    
+    <section>
+        <h2>Signature Drinks</h2>
+        <div class="drink-grid">
+            
+        <div class="drink-card">
+            <img src="drink_thumbnails/bacardi_party.png" alt="Bacardi Party">
+            <h3>Bacardi Party</h3>
+            <p class="price">$11.50</p>
+            <p class="ingredients">Bacardi, Bacardi Limon, Passionfruit, Sprite, Tangerine</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/bob_marley.png" alt="Bob Marley">
+            <h3>Bob Marley</h3>
+            <p class="price">$13</p>
+            <p class="ingredients">Trail Grenadine, orange juice, rum, pineapple juice, Malibu, blue curacao</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/jamaican_mudslide.png" alt="Jamaican Mudslide">
+            <h3>Jamaican Mudslide</h3>
+            <p class="price">$11.50</p>
+            <p class="ingredients">Baileys, Tia Maria, milk, Kahlua</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/bahama_mama.png" alt="Bahama Mama">
+            <h3>Bahama Mama</h3>
+            <p class="price">$12.50</p>
+            
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/kool_runnings.png" alt="Kool Runnings">
+            <h3>Kool Runnings</h3>
+            <p class="price">$10.50</p>
+            <p class="ingredients">Bacardi Limon, Wray & Nephew, Malibu, tangerine, cranberry, pineapple juice</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/pain_killer.png" alt="Pain Killer">
+            <h3>Pain Killer</h3>
+            <p class="price">$12.50</p>
+            <p class="ingredients">Coconut milk, pineapple juice, Sugar Island Spiced Rum</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/ultimate_hulk.png" alt="Ultimate Hulk">
+            <h3>Ultimate Hulk</h3>
+            <p class="price">$12</p>
+            <p class="ingredients">Hennessy, Hypnotiq, vodka</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/rum_punch.png" alt="Rum Punch">
+            <h3>Rum Punch</h3>
+            <p class="price">$13</p>
+            <p class="ingredients">Rodney’s secret recipe</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/dark_&_stormy_jamaican.png" alt="Dark & Stormy Jamaican">
+            <h3>Dark & Stormy Jamaican</h3>
+            <p class="price">$11.50</p>
+            <p class="ingredients">Ginger beer, lime juice, Myers rum</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/sorrel_with_stoneginger_wine.png" alt="Sorrel with Stone Ginger Wine">
+            <h3>Sorrel with Stone Ginger Wine</h3>
+            <p class="price">$11.50</p>
+            
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/amaretto_sour.png" alt="Amaretto Sour">
+            <h3>Amaretto Sour</h3>
+            <p class="price">$10</p>
+            
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/blue_coconut.png" alt="Blue Coconut">
+            <h3>Blue Coconut</h3>
+            <p class="price">$12.50</p>
+            <p class="ingredients">Coconut rum, blue curacao</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/dirty_banana.png" alt="Dirty Banana">
+            <h3>Dirty Banana</h3>
+            <p class="price">$11.50</p>
+            <p class="ingredients">Rum, banana liqueur, Irish cream</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/jamaican_iced_tea.png" alt="Jamaican Iced Tea">
+            <h3>Jamaican Iced Tea</h3>
+            <p class="price">$12.50</p>
+            <p class="ingredients">Vodka, gin, tequila, rum, blue curacao, sour mix, coke</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/moscow_mule.png" alt="Moscow Mule">
+            <h3>Moscow Mule</h3>
+            <p class="price">$12.50</p>
+            <p class="ingredients">Vodka, lime juice, ginger beer</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/rodneys_specialty.png" alt="Rodney’s Specialty">
+            <h3>Rodney’s Specialty</h3>
+            <p class="price">$13.50</p>
+            <p class="ingredients">Pineapple-guava, Myer’s, mango nectar, orange juice, Appleton, Sugar Island Spiced Rum</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/sorreln_wray.png" alt="Sorrel’n’Wray">
+            <h3>Sorrel’n’Wray</h3>
+            <p class="price">$13</p>
+            <p class="ingredients">Fresh sorrel, ginger, Wray & Nephew rum</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/usain_bolt.png" alt="Usain Bolt">
+            <h3>Usain Bolt</h3>
+            <p class="price">$13.50</p>
+            <p class="ingredients">Hennessy, Grand Gala, pineapple, Sprite</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/sex_on_the_beach.png" alt="Sex on the Beach">
+            <h3>Sex on the Beach</h3>
+            <p class="price">$11.50</p>
+            <p class="ingredients">Vodka, pineapple juice, orange juice</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/liquid_marijuana.png" alt="Liquid Marijuana">
+            <h3>Liquid Marijuana</h3>
+            <p class="price">$13</p>
+            <p class="ingredients">Rodney’s secret recipe</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/tequila_sunrise.png" alt="Tequila Sunrise">
+            <h3>Tequila Sunrise</h3>
+            <p class="price">$12.50</p>
+            
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/captain_morgan_rum_runner.png" alt="Captain Morgan Rum Runner">
+            <h3>Captain Morgan Rum Runner</h3>
+            <p class="price">$12</p>
+            <p class="ingredients">Peach schnapps, Malibu coconut rum, pineapple juice</p>
+        </div>
+        
+        </div>
+    </section>
+    
+    <section>
+        <h2>Beer</h2>
+        <div class="drink-grid">
+            
+        <div class="drink-card">
+            <img src="drink_thumbnails/miller_lite.jpeg" alt="Miller Lite">
+            <h3>Miller Lite</h3>
+            <p class="price">$5</p>
+            
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/heineken.jpeg" alt="Heineken">
+            <h3>Heineken</h3>
+            <p class="price">$5</p>
+            
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/corona.jpeg" alt="Corona">
+            <h3>Corona</h3>
+            <p class="price">$5</p>
+            
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/red_stripe.jpeg" alt="Red Stripe">
+            <h3>Red Stripe</h3>
+            <p class="price">$5</p>
+            
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/guinness.jpeg" alt="Guinness">
+            <h3>Guinness</h3>
+            <p class="price">$5</p>
+            
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/blue_moon.jpeg" alt="Blue Moon">
+            <h3>Blue Moon</h3>
+            <p class="price">$5</p>
+            
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/stella_artois.jpeg" alt="Stella Artois">
+            <h3>Stella Artois</h3>
+            <p class="price">$5</p>
+            
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/red_stripe_with_sorrel.jpeg" alt="Red Stripe with Sorrel">
+            <h3>Red Stripe with Sorrel</h3>
+            <p class="price">$7.50</p>
+            
+        </div>
+        
+        </div>
+    </section>
+    
+    <section>
+        <h2>Red Wine</h2>
+        <div class="drink-grid">
+            
+        <div class="drink-card">
+            <img src="drink_thumbnails/beringer_red_moscato.png" alt="Beringer Red Moscato (CA)">
+            <h3>Beringer Red Moscato (CA)</h3>
+            <p class="price">$8.50 / $29</p>
+            <p class="ingredients">Moscato grape blended with Zin & Petite Syrah</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/14_hands_merlot.png" alt="14 Hands Merlot (WA)">
+            <h3>14 Hands Merlot (WA)</h3>
+            <p class="price">$9.50 / $32.50</p>
+            <p class="ingredients">Blackberries, dark fruits with notes of cherries</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/19_crimes.png" alt="19 Crimes">
+            <h3>19 Crimes</h3>
+            <p class="price">$9.50 / $32.50</p>
+            <p class="ingredients">Fruity blend, aromas of red currant & strawberry</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/columbia_crest_grand_estate_cabernet.png" alt="Columbia Crest Grand Estate Cabernet (WA)">
+            <h3>Columbia Crest Grand Estate Cabernet (WA)</h3>
+            <p class="price">$9.50 / $32.50</p>
+            <p class="ingredients">Cherry, plum & spice with smooth tannins</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/la_crema_pinot_noir.png" alt="La Crema Pinot Noir Sonoma Coast">
+            <h3>La Crema Pinot Noir Sonoma Coast</h3>
+            <p class="price">$11.50 / $42</p>
+            <p class="ingredients">Cherry, plum, pomegranate, hints of delicate tea leaf</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/lake_sonoma_cabernet.png" alt="Lake Sonoma Cabernet">
+            <h3>Lake Sonoma Cabernet</h3>
+            <p class="price">$12.50 / $42</p>
+            <p class="ingredients">Juicy plum, blackberry, chewy tannins, sweet mocha finish</p>
+        </div>
+        
+        </div>
+    </section>
+    
+    <section>
+        <h2>White Wine</h2>
+        <div class="drink-grid">
+            
+        <div class="drink-card">
+            <img src="drink_thumbnails/beringer_white_zinfandel.png" alt="Beringer White Zinfandel (CA)">
+            <h3>Beringer White Zinfandel (CA)</h3>
+            <p class="price">$8.50 / $29</p>
+            <p class="ingredients">Strawberry & melon flavors, sweet citrus finish</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/chateau_ste._michelle_chardonnay.png" alt="Chateau Ste. Michelle Chardonnay (WA)">
+            <h3>Chateau Ste. Michelle Chardonnay (WA)</h3>
+            <p class="price">$9.50 / $32</p>
+            <p class="ingredients">Soft chardonnay with fresh apple & citrus</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/chateau_ste._michelle_riesling.png" alt="Chateau Ste. Michelle Riesling (WA)">
+            <h3>Chateau Ste. Michelle Riesling (WA)</h3>
+            <p class="price">$9.50 / $32</p>
+            <p class="ingredients">Easy-drinking off-dry with sweet lime</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/terra_doro_moscato.png" alt="Terra D’Oro Moscato (CA)">
+            <h3>Terra D’Oro Moscato (CA)</h3>
+            <p class="price">$9.50 / $29</p>
+            <p class="ingredients">Crisp, rich, apricot, green apple, rose petals</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/la_crema_pinot_gris.png" alt="La Crema Pinot Gris (CA)">
+            <h3>La Crema Pinot Gris (CA)</h3>
+            <p class="price">$8.50 / $29</p>
+            <p class="ingredients">Bright and balanced, white peach, tropical notes</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/j._lohr_chardonnay_riverstone.png" alt="J. Lohr Chardonnay Riverstone">
+            <h3>J. Lohr Chardonnay Riverstone</h3>
+            <p class="price">$12.50 / $42</p>
+            
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/the_seeker_sauvignon_blanc.png" alt="The Seeker Sauvignon Blanc">
+            <h3>The Seeker Sauvignon Blanc</h3>
+            <p class="price">$11.50 / $42</p>
+            <p class="ingredients">White peach, black currant, fresh green herbs</p>
+        </div>
+        
+        <div class="drink-card">
+            <img src="drink_thumbnails/st._supéry_moscato.png" alt="St. Supéry Moscato">
+            <h3>St. Supéry Moscato</h3>
+            <p class="price">$14 / $56.50</p>
+            
+        </div>
+        
+        </div>
+    </section>
+    
+</body>
+</html>
